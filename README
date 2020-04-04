@@ -1,9 +1,14 @@
 Mathematica in Advance on Linux
 
 # table 生成
-AbsoluteTiming[Table[Random[],{100000000}];]  4s
+AbsoluteTiming[t10M=Table[Random[],{100000000}];]  880m;4s
+AbsoluteTiming[Table[Random[],{100000000}];]  880m;4s
 AbsoluteTiming[Table[Random[],{1000000000}];] 48s
 AbsoluteTiming[Table[Random[],{2000000000}];] 89s
 AbsoluteTiming[Table[Random[],{4000000000}];] 180s
 AbsoluteTiming[Table[Random[],{8000000000}];] 348s
-AbsoluteTiming[Table[Random[],{16000000000}];] 220G; 67m
+
+AbsoluteTiming[Table[Random[],{16000000000}];] 237G; 4436s
+In[3]:= MemoryInUse[]                                                           
+Out[3]= 55943152
+
