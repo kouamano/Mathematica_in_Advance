@@ -1,5 +1,8 @@
 Mathematica in Advance on Linux
 
+# CPU
+https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/6/html/performance_tuning_guide/main-cpu
+
 # table 生成
 ## non-CPU-bind
 AbsoluteTiming[t10M=Table[Random[],{100000000}];]  880m;4s
