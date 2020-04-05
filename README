@@ -83,7 +83,7 @@ local_node             690511960       579448040
 other_node               2528249         2288772
 
 
-(3)1400M
+(4)1400M
 
 (base) [kamano@n007 ~]$ numastat
                            node0           node1
@@ -94,6 +94,29 @@ interleave_hit             63576           63540
 local_node             690524046       579461206
 other_node               2528249         2288772
 
-AbsoluteTiming[t1200M=Table[Random[],{14000000000}];] 
+AbsoluteTiming[t1400M=Table[Random[],{14000000000}];] 104G;662s
+
+(base) [kamano@n007 ~]$ numastat
+                           node0           node1
+numa_hit               690859493       579921892
+numa_miss                2534396         2208490
+numa_foreign             2208490         2534396
+interleave_hit             63576           63540
+local_node             690845142       579841597
+other_node               2548747         2288785
+
+(5)1600M
+
+(base) [kamano@n007 ~]$ numastat
+                           node0           node1
+numa_hit               690878011       579940959
+numa_miss                2534396         2208490
+numa_foreign             2208490         2534396
+interleave_hit             63576           63540
+local_node             690863660       579860664
+other_node               2548747         2288785
+
+
+AbsoluteTiming[t1600M=Table[Random[],{16000000000}];] 
 
 
