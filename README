@@ -139,6 +139,4 @@ interleave_hit             63576           63540
 local_node             692350686       580410620
 other_node               2635984         2589935
 
-
-AbsoluteTiming[t1800M=Table[Random[],{18000000000}];] 
-
+AbsoluteTiming[t1600M=Table[Random[],{18000000000}];] 
