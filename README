@@ -132,11 +132,12 @@ other_node               2635984         2589921
 
 (base) [kamano@n007 ~]$ numastat
                            node0           node1
-numa_hit               692365055       580490939
+numa_hit               693960796       582283211
 numa_miss                2621615         2509616
 numa_foreign             2509616         2621615
 interleave_hit             63576           63540
-local_node             692350686       580410620
-other_node               2635984         2589935
+local_node             693946427       582202870
+other_node               2635984         2589957
 
 AbsoluteTiming[t1600M=Table[Random[],{18000000000}];] 
+
